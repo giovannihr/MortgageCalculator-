@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Mortgage Calculator</h1>
+    <!--
+	.......................................................
+	.......................................................
+
+	Form elements
+
+
+	.......................................................
+	.......................................................
+     -->
+    <div id="form-div=wrapper">
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Mortgage Calculator</legend>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="loanBalanceInput">Loan Balance</label>
+                    <div class="col-md-6">
+                        <input id="loanBalanceInput" name="loanBalanceInput" type="text" placeholder="" class="form-control input-md" required="">
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="interestRateInput">Interest Rate (%)</label>
+                    <div class="col-md-6">
+                        <input id="interestRateInput" name="interestRateInput" type="text" placeholder="" class="form-control input-md" required="">
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="loanTermsInput">Loan Terms (years)</label>
+                    <div class="col-md-6">
+                        <input id="loanTermsInput" name="loanTermsInput" type="text" placeholder="" class="form-control input-md" required="">
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="periodSelectOption">Period</label>
+                    <div class="col-md-6">
+                        <select id="periodSelectOption" name="periodSelectOption" class="form-control">
+                            <option value="1">Monthly</option>
+                            <option value="2">BiMonthly</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="calculateButton"></label>
+                    <div class="col-md-4">
+                        <button id="calculateButton" name="calculateButton" class="btn btn-primary">Calculate</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <!-- 
+	.......................................................
+	.......................................................
+
+
+
+	.......................................................
+	.......................................................
+	-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
