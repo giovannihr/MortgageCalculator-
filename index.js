@@ -104,9 +104,13 @@ function run() {
     // final calculation
     var monthlyPayment = loanBalance * interestQuotient;
 
+
+
+
     var resultsMessage = "Your estimated mortgage payment is $" + Math.round(monthlyPayment) + ".";
 
     document.getElementById("resultsParagraph").innerHTML = resultsMessage;
+
 
 }
 
@@ -120,5 +124,15 @@ function onClick() {
     run();
 
 }
-//..........
+
+
+//Comments from peers
+/*VS = originaly the onClick function was seperated from the math function.
+Combining the code makes it easier to read. I like the format but i think the beginning comments could be deleted. 
+
+ 
+// KF = very indepth comments in trying to figure out which method to use in JavaScript
+*/
+
+//........
 //---------------------------------------
